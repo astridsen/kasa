@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    padding-top: 20px;
+    position: absolute;
+    width:100%;
+    bottom: 0;
+}
+
+.logo {
+    width: 100px;
+    padding-top: 40px;
+}
+
+.rights {
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
