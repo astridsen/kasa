@@ -7,7 +7,7 @@ import styles from '../../styles/header.module.css';
 const Header = () => {
     return(
         <div className={styles.header}>
-            <img src={logo} alt="kasa-logo"/>
+            <img src={logo} alt="kasa-logo" className={styles.logo}/>
             <nav>
                 <ul className={styles.menu}>
                     <li className={styles.menuItem}><Link to='/' className={styles.link}>Accueil</Link></li>
