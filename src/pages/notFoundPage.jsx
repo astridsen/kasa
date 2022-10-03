@@ -1,11 +1,15 @@
 import React from "react";
-import Header from '../components/Layout/header'
+import { NavLink } from 'react-router-dom';
+import styles from '../styles/error.module.css';
 
 const notFoundPage = () => {
     return (
         <div>
-            <Header />
-            404 NOT FOUND
+            <main className={styles.wrapper}>
+				<h1 className={styles.title}>404</h1>
+				<p className={styles.text}> Oups! la page que vous demandez n'existe pas.</p>
+				<NavLink to='/'>Retourner sur la page d'accueil</NavLink>
+			</main>
         </div>
     )
 }

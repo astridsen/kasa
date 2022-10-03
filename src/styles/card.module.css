@@ -23,7 +23,20 @@
 }
 
 .cardText {
+    z-index: 1;
     font-size: 18px;
     margin: 0 20px 30px 20px;
+}
+
+.cardWrapper a {
+    text-decoration: none;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 

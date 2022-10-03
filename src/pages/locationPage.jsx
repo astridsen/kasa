@@ -1,13 +1,24 @@
 import React from "react";
-import Header from '../components/Layout/header'
-
+import { useParams } from "react-router-dom";
+import data from './../data.json';
+import Slider from "../components/Layout/slider";
 const LocationPage = () => {
-    return (
+    const { id } = useParams();
+    const locationData = data.find((location) => location.id === id);
+    const { title, pictures, location } = locationData;
+
+	return (
         <div>
-            <Header />
-            LOCATION PAGE
+          <Slider slides={pictures} />
+          <div >
+            <div>
+              <h1>{title}</h1>
+              <p>{location}</p>
+            </div>
+          </div>
+          
         </div>
-    )
+      );
 }
 
 export default LocationPage;

@@ -1,29 +1,22 @@
 import React from "react";
 import styles from '../../styles/card.module.css';
+import {NavLink} from 'react-router-dom';
 import locationList from '../../data.json';
 
 const Card = () => {
-    return (
-        <div>
-        <ul className={styles.cardWrapper}>
-            {locationList.map((location) => (
-                <li key={`${location.id}-${location.index}`} className={styles.card} style={{backgroundImage: `url(${location.cover})`, backgroundSize: 'cover'}}><p className={styles.cardText}>{location.title}</p></li>
-            ))}
-        </ul>
-        </div>
+    return(
+        <div className={styles.cardWrapper}>
+				{locationList.map(location => (
+						<NavLink to={`/location/${location.id}`} key={location.id}>
+							<div className={styles.card} key={location.id}>
+								<img className={styles.backgroundImage}src={location.cover} alt='location-cover'/>
+								<div></div>
+								<h3 className={styles.cardText} key={location.id}>{location.title}</h3>
+							</div>
+						</NavLink>
+				))}
+			</div>
     )
 }
 
-/*const Card = () => {
-    return(
-        <div className={styles.cardContenair}>
-        
-            <div className={styles.card}>
-                <p>{DisplayData.title}</p>
-            </div>
-        </div>
-        </div>
-    )
-}*/
-
-export default Card;
+export default Card

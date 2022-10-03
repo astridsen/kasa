@@ -1,19 +1,14 @@
 import React from "react";
-import Header from "../components/Layout/header";
-import Footer from "../components/Layout/footer";
-import Card from '../components/Layout/card'
-
-import styles from '../styles/banner.module.css';
+import Card from '../components/Layout/card';
+import Banner from "../components/Layout/banner";
+import data from '../data.json';
+import imageBanner from '../assets/homeBackground.png';
 
 const HomePage = () => {
     return (
         <div>
-            <Header />
-            <div className={styles.banner}>
-                <p className={styles.bannerText}>Chez vous, partout et ailleurs</p>
-            </div>
-            <Card />
-            <Footer />
+            <Banner image={imageBanner} text="Chez vous, partout et ailleurs"/>
+            <Card data={data} />
         </div>
     )
 }

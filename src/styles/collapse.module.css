@@ -1,0 +1,44 @@
+.collapse {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.collapseButton {
+    color: grey;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+  
+.collapseArrow {
+    margin-right: 1rem;
+    pointer-events: none;
+    transform: rotate(90deg);
+    transition: transform 300ms;
+    transform-origin: bottom -25%;
+    translate: -50% -50%;
+}
+  
+.collapseContent {
+    color: #FF6060;
+    background-color: grey;
+    border-radius: 5px;
+    margin-top: -5px;
+    z-index: -1;
+    max-height: 0;
+    transition: max-height 250ms ease-out, padding 300ms ease-out;
+    overflow: hidden;
+    padding-left: 12px;
+}
+.collapseText {
+    margin: 0;
+    font-size: 12px;
+}
