@@ -1,0 +1,39 @@
+.sliderWrapper {
+    position: relative;
+    width: 80%;
+    height: 415px;
+    margin: 50px auto;
+}
+  
+.sliderPicture {
+    width: 100%;
+    height:415px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+  
+.arrowLeft,
+.arrowRight {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  
+.arrowRight {
+      right: 0;
+    }
+  
+.arrowRightIcon {
+      margin-right: 20px;
+    }
+.arrowLeftIcon {
+      margin-left: 20px;
+    }
+  
+.arrowRightIcon,
+.arrowLeftIcon {
+    height: 80px;
+}
