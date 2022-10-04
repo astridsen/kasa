@@ -35,15 +35,16 @@
         width: 90%; 
     }
     .logo {
-        width: 130px;
+        width: 100px;
     }
     
     .menu {
         display: flex;
+        padding-left: 0;
         align-items: baseline;
         list-style-type: none;
         color: #FF6060;
-        font-size: 14px;
+        font-size: 12px;
         text-transform: uppercase;
     }
 

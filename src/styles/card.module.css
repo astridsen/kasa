@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     margin: 50px auto;
     padding-left: 0;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #F6F6F6;
     border-radius: 25px;
 }
@@ -40,3 +40,37 @@
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .cardWrapper {
+        display: flex;
+        width: 90%;
+        margin: 5px auto;
+        flex-wrap: wrap;
+        padding-left: 0;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .card {
+        width: 100%;
+        height: 255px;
+        margin: 10px auto;
+        background-color:#FF6060;
+        background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
+        border-radius: 10px;
+        list-style-type: none;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        
+    }
+
+    .backgroundImage {
+        position: absolute;
+        width: 90%;
+        height: 255px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+}
