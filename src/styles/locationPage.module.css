@@ -1,0 +1,30 @@
+.contentWrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    color: #FF6060;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.location {
+    font-size: 18px;
+    margin-top : 0;
+}
+
+.ratingAndHost {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.locationDetails {
+    width: 80%;
+    margin: auto auto 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}

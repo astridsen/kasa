@@ -1,11 +1,12 @@
 import React from "react";
+import styles from '../../styles/tag.module.css'
 
-const Tag = () => {
-    return (
-        <div>
+const Tags = (props) => {
+  return (
+    <div className={styles.tag}>
+      <p className={styles.tagText}>{props.tagTitle}</p>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default Tag;
+export default Tags;

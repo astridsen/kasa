@@ -1,10 +1,11 @@
 .collapseWrapper {
-    width: 70%;
     margin: 50px auto;
+    width: 70%;
 }
 
 .collapseItem {
     margin: 30px auto;
+    width: 100%;
 }
 
 .collapseTitle {
@@ -32,5 +33,10 @@
     background-color: #F7F7F7;;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.collapseList{
+    list-style-type: none;
+    padding-left: 0px;
 }
   

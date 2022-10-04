@@ -21,7 +21,15 @@ const Collapse = ({title, content}) => {
           display: `${open ? "block" : "none"}`, 
         }}
       >
-        {content}
+          {Array.isArray(content) ? (
+          <ul className={styles.collapseList}>
+            {content.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        )}
       </div>
     </div>
   );
