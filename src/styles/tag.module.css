@@ -20,4 +20,23 @@
     margin: 0;
     font-size: 14px;
     font-weight: 500;
-  }
+}
+
+@media (max-width: 768px) {
+    .tagWrapper {
+        width: 90%;
+    }
+    .tag {
+        height: 18px;
+        border-radius: 5px;
+        justify-content: left;
+        padding: 5px;
+        margin-top: 15px;
+        margin-right: 10px;
+        justify-content: center;
+    }
+
+    .tagText {
+        font-size: 10px;
+    }
+}

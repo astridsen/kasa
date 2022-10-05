@@ -15,7 +15,13 @@
 }
 
 .rights {
-    width: 250px;
+    width: 200px;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        max-width:768px;
+    }
 }

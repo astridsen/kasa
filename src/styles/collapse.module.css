@@ -9,7 +9,7 @@
 }
 
 .collapseTitle {
-    height: 5.2rem;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,5 +38,29 @@
 .collapseList{
     list-style-type: none;
     padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+    .collapseItem {
+        margin: 10px auto;
+    }
+
+    .collapseTitle {
+        height: 30px;
+        border-radius: 5px;
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .arrow{
+        height: 9px;
+    }
+
+    .collapseContent {
+        font-size : 12px;
+        line-height: 20px;
+        padding: 10px;
+    }
 }
   

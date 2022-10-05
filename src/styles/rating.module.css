@@ -6,3 +6,9 @@
 .ratingIcon {
     margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+    .ratingIcon {
+        width: 15px;
+    }
+}

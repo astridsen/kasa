@@ -20,4 +20,21 @@
     border-radius: 50%;
     height: 64px;
     width: 64px;
+}
+
+@media (max-width: 768px) {
+    .host {
+        margin: 10px 0;
     }
+    .hostName {
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 8px;
+        margin-top: 0;
+    }
+    
+    .hostPicture {
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -13,7 +13,7 @@ const Collapse = ({title, content}) => {
         className={styles.collapseTitle } onClick={() => setOpen(!open)}
       >
         { title }
-        { open ? <img src={ArrowUp} alt="arrow-up"/> : <img src={ArrowDown} alt="arrow-down" /> }
+        { open ? <img src={ArrowUp} alt="arrow-up" className={styles.arrow}/> : <img src={ArrowDown} alt="arrow-down" className={styles.arrow}/> }
       </div>
       <div
         className={styles.collapseContent}
