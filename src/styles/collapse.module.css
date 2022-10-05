@@ -41,8 +41,13 @@
 }
 
 @media (max-width: 768px) {
+    .collapseWrapper {
+        margin: 20px auto 150px auto;
+        width: 90%;
+    }
+
     .collapseItem {
-        margin: 10px auto;
+        margin: 15px auto;
     }
 
     .collapseTitle {

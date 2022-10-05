@@ -10,6 +10,8 @@
 
 .wrapper a {
     color: #FF6060;
+    font-size: 18px;
+    margin-top: 200px;
 }
 
 .title {
@@ -20,4 +22,20 @@
 .text {
     font-size: 36px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 96px;
+    }
+
+    .text {
+    font-size: 18px;
+    }
+
+    .wrapper a {
+        font-size: 14px;
+        margin-top: 100px;
+    }
+
 }
