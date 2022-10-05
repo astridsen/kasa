@@ -42,8 +42,6 @@
 
     .bannerImg {
     border-radius: 10px;
-    object-fit: fill;
-    transform: scale(1.25);
     }
 
     .bannerText {
