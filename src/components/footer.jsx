@@ -1,8 +1,8 @@
 import React from "react";
-import logo from '../../assets/footer-logo.svg';
-import rights from '../../assets/all-rights-reserved.svg';
+import logo from '../assets/footer-logo.svg';
+import rights from '../assets/all-rights-reserved.svg';
 
-import styles from '../../styles/footer.module.css';
+import styles from '../styles/layout/footer.module.css';
 
 const Footer = () => {
     return(

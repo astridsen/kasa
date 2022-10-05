@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-import styles from '../styles/error.module.css';
+import styles from '../styles/pages/errorPage.module.css';
 
-const notFoundPage = () => {
+const errorPage = () => {
     return (
         <div>
             <main className={styles.wrapper}>
@@ -14,4 +14,4 @@ const notFoundPage = () => {
     )
 }
 
-export default notFoundPage;
+export default errorPage;

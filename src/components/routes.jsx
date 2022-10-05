@@ -7,9 +7,9 @@ import {
 import HomePage from "../pages/homePage";
 import LocationPage from "../pages/locationPage";
 import AboutPage from "../pages/aboutPage";
-import NotFoundPage from "../pages/notFoundPage";
-import Header from './Layout/header';
-import Footer from './Layout/footer';
+import ErrorPage from "../pages/errorPage";
+import Header from './header';
+import Footer from './footer';
 
 const index = () => {
   return (
@@ -19,7 +19,7 @@ const index = () => {
         <Route path="/" element={<HomePage />} exact />
         <Route path="/location/:id" element={<LocationPage />} exact />
         <Route path="/a-propos" element={<AboutPage />} exact />
-        <Route path="*" element={<NotFoundPage />} exact/>
+        <Route path="*" element={<ErrorPage />} exact/>
       </Routes>
       <Footer />
     </Router>

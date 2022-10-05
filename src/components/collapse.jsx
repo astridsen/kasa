@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import ArrowUp from '../../assets/arrow-up.png';
-import ArrowDown from '../../assets/arrow-down.png';
-import styles from '../../styles/collapse.module.css';
+import ArrowUp from '../assets/arrow-up.png';
+import ArrowDown from '../assets/arrow-down.png';
+import styles from '../styles/components/collapse.module.css';
 
 const Collapse = ({title, content}) => {
     const [open, setOpen] = useState(false);

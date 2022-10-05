@@ -2,14 +2,14 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import data from './../data.json';
 
-import Slider from "../components/Layout/slider";
-import Tag from "../components/Layout/tag";
-import Rating from "../components/Layout/rating";
-import Host from "../components/Layout/host";
-import Collapse from "../components/Layout/collapse";
+import Slideshow from "../components/slideshow";
+import Tag from "../components/tag";
+import Rating from "../components/rating";
+import Host from "../components/host";
+import Collapse from "../components/collapse";
 
-import styles from '../styles/locationPage.module.css';
-import tagstyles from '../styles/tag.module.css';
+import styles from '../styles/pages/locationPage.module.css';
+import tagstyles from '../styles/components/tag.module.css';
 
 const LocationPage = () => {
     const { id } = useParams();
@@ -18,7 +18,7 @@ const LocationPage = () => {
 
 	return (
         <div>
-          <Slider slides={pictures} />
+          <Slideshow slides={pictures} />
           <div className={styles.contentWrapper}>
             <div className={styles.informations}>
               <h1 className={styles.title}>{title}</h1>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../../styles/host.module.css";
+import styles from "../styles/components/host.module.css";
 
 const Host = ({ host }) => {
   const isHostSplited = host.name.split(" ");

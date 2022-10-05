@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "../components/Layout/banner";
-import Collapse from "../components/Layout/collapse";
+import Banner from "../components/banner";
+import Collapse from "../components/collapse";
 import imageBanner from "../assets/aboutBackground.svg";
 
-import styles from '../styles/collapse.module.css';
+import styles from '../styles/components/collapse.module.css';
 
 
 const AboutPage = () => {

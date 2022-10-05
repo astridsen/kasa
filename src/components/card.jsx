@@ -1,7 +1,7 @@
 import React from "react";
-import styles from '../../styles/card.module.css';
+import styles from '../styles/components/card.module.css';
 import {NavLink} from 'react-router-dom';
-import locationList from '../../data.json';
+import locationList from '../data.json';
 
 const Card = () => {
     return(

@@ -1,9 +1,9 @@
 import React from "react";
 
-import redStar from '../../assets/redStar.svg';
-import greyStar from '../../assets/greyStar.svg';
+import redStar from '../assets/redStar.svg';
+import greyStar from '../assets/greyStar.svg';
 
-import styles from '../../styles/rating.module.css'
+import styles from '../styles/components/rating.module.css'
 
 const Rating = ({rating}) => {
     const stars = [1, 2, 3, 4, 5];

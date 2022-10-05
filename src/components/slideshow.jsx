@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 
 //Style
-import arrowLeft from "../../assets/arrow-left.svg";
-import arrowRight from "../../assets/arrow-right.svg";
-import styles from "../../styles/slider.module.css"
+import arrowLeft from "../assets/arrow-left.svg";
+import arrowRight from "../assets/arrow-right.svg";
+import styles from "../styles/components/slider.module.css"
 
-const Slider = ({ slides }) => {
+const Slideshow = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -43,4 +43,4 @@ const Slider = ({ slides }) => {
   );
 };
 
-export default Slider;
+export default Slideshow;

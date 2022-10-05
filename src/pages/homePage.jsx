@@ -1,6 +1,6 @@
 import React from "react";
-import Card from '../components/Layout/card';
-import Banner from "../components/Layout/banner";
+import Card from '../components/card';
+import Banner from "../components/banner";
 import data from '../data.json';
 import imageBanner from '../assets/homeBackground.png';
 

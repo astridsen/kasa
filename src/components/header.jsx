@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assets/header-logo.svg';
+import logo from '../assets/header-logo.svg';
 
-import styles from '../../styles/header.module.css';
+import styles from '../styles/layout/header.module.css';
 
 const Header = () => {
     return(
