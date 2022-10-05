@@ -17,7 +17,7 @@ const LocationPage = () => {
     const { title, pictures, location, rating, host, description, equipments } = locationData;
 
 	return (
-        <div>
+        <main>
           <Slideshow slides={pictures} />
           <div className={styles.contentWrapper}>
             <div className={styles.informations}>
@@ -38,7 +38,7 @@ const LocationPage = () => {
             <Collapse title="Description" content={description} />
             <Collapse title="Équipements" content={equipments} />
             </div> 
-        </div>
+        </main>
       );
 }
 

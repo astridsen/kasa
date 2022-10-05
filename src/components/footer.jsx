@@ -6,10 +6,10 @@ import styles from '../styles/layout/footer.module.css';
 
 const Footer = () => {
     return(
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
             <img src={logo} alt="kasa-logo" className={styles.logo}/>
             <img src={rights} alt="all-rights-reserved" className={styles.rights}/>
-        </div>
+        </footer>
     )
 }
 

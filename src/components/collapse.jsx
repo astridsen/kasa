@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import ArrowUp from '../assets/arrow-up.png';
-import ArrowDown from '../assets/arrow-down.png';
+import ArrowUp from '../assets/arrow-up.svg';
+import ArrowDown from '../assets/arrow-down.svg';
 import styles from '../styles/components/collapse.module.css';
 
 const Collapse = ({title, content}) => {

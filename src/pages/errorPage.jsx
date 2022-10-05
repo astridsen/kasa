@@ -4,13 +4,11 @@ import styles from '../styles/pages/errorPage.module.css';
 
 const errorPage = () => {
     return (
-        <div>
-            <main className={styles.wrapper}>
-				<h1 className={styles.title}>404</h1>
-				<p className={styles.text}> Oups! la page que vous demandez n'existe pas.</p>
-				<NavLink to='/'>Retourner sur la page d'accueil</NavLink>
-			</main>
-        </div>
+        <main className={styles.wrapper}>
+            <h1 className={styles.title}>404</h1>
+            <p className={styles.text}> Oups! la page que vous demandez n'existe pas.</p>
+            <NavLink to='/'>Retourner sur la page d'accueil</NavLink>
+        </main>
     )
 }
 

@@ -6,10 +6,10 @@ import imageBanner from '../assets/homeBackground.png';
 
 const HomePage = () => {
     return (
-        <div>
+        <main>
             <Banner image={imageBanner} text="Chez vous, partout et ailleurs"/>
             <Card data={data} />
-        </div>
+        </main>
     )
 }
 

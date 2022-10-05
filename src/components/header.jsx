@@ -6,7 +6,7 @@ import styles from '../styles/layout/header.module.css';
 
 const Header = () => {
     return(
-        <div className={styles.header}>
+        <header className={styles.header}>
             <img src={logo} alt="kasa-logo" className={styles.logo}/>
             <nav>
                 <ul className={styles.menu}>
@@ -14,7 +14,7 @@ const Header = () => {
                     <li className={styles.menuItem}><Link to='/a-propos' className={styles.link}>A propos</Link></li>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 }
 
