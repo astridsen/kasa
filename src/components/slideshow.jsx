@@ -1,10 +1,9 @@
 import React from "react";
 import { useState } from "react";
 
-//Style
 import arrowLeft from "../assets/arrow-left.svg";
 import arrowRight from "../assets/arrow-right.svg";
-import styles from "../styles/components/slider.module.css"
+import styles from "../styles/components/slider.module.css";
 
 const Slideshow = ({ slides }) => {
   const [current, setCurrent] = useState(0);

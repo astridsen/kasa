@@ -7,6 +7,7 @@ import Tag from "../components/tag";
 import Rating from "../components/rating";
 import Host from "../components/host";
 import Collapse from "../components/collapse";
+import ErrorPage from "./errorPage";
 
 import styles from '../styles/pages/locationPage.module.css';
 import tagstyles from '../styles/components/tag.module.css';
@@ -14,6 +15,10 @@ import tagstyles from '../styles/components/tag.module.css';
 const LocationPage = () => {
     const { id } = useParams();
     const locationData = data.find((location) => location.id === id);
+
+    if (!locationData) return (
+        <ErrorPage/>)
+    
     const { title, pictures, location, rating, host, description, equipments } = locationData;
 
 	return (

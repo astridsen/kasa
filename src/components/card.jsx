@@ -1,12 +1,16 @@
 import React from "react";
 import styles from '../styles/components/card.module.css';
-import {NavLink} from 'react-router-dom';
+import {Navigate, NavLink, useParams} from 'react-router-dom';
 import locationList from '../data.json';
 
 const Card = () => {
+	const { id } = useParams();
+	const idExist = locationList.filter((location) => location.id === id );
+
     return(
         <div className={styles.cardWrapper}>
-				{locationList.map(location => (
+				{locationList.map(location =>
+					!idExist ? (<Navigate to='*' />) : (
 						<NavLink to={`/location/${location.id}`} key={location.id}>
 							<div className={styles.card} key={location.id}>
 								<img className={styles.backgroundImage}src={location.cover} alt='location-cover'/>
@@ -14,7 +18,8 @@ const Card = () => {
 								<h3 className={styles.cardText} key={location.id}>{location.title}</h3>
 							</div>
 						</NavLink>
-				))}
+					)
+				)}
 			</div>
     )
 }
